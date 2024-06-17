@@ -1,7 +1,7 @@
 pipeline {
 	agent any
 	environment {
-		registry="davidcursobigdata/prueba-jenkins"
+		registry="davidcursobigdata/prueba"
 		registryCredentials="dockerhub"
 		project="prueba-jenkins"
 		projectVersion="1.0"
