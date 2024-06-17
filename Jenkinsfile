@@ -3,7 +3,6 @@ pipeline {
 	environment {
 		registry="davidcursobigdata/prueba"
 		registryCredentials="dockerhub"
-		project="prueba-jenkins"
 		projectVersion="1.0"
 		repository="https://github.com/davidcursobigdata/curso.git"
 		repositoryCredentials="github"
@@ -37,7 +36,7 @@ pipeline {
                     try{
                         sh 'docker run --name test $registry'
                     }finally{
-                        sh 'docker rm $project'
+                        sh 'docker rm test'
                     }
 
                 }
